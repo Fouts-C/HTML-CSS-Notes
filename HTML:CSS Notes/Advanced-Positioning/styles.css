@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 1200px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.example {
+  display: flex;
+  justify-content: space-around;
+
+  width: 800px;
+  margin: 50px 0;
+  background-color: #D6E9FE;
+}
+
+.item img {
+  display: block;
+}
+
+.item-relative {
+  position: relative;
+  top: 30px; /* Will move item down (away from top)*/
+  left: 30px; /* Will move item right (away from left)*/
+  /* Can also use right and bottom to position OR negative px's*/
+}
+
+.item-absolute {
+  position: absolute; /* Most manual way of positioning/relative to page*/
+  top: 10px;
+  left: 10px;
+  /* If the container is relative we can have absolute relative items*/
+}
+
+/* Fixed items don't scroll with the rest of the webpage*/
+.item-fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
